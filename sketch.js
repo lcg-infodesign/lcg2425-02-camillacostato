@@ -213,7 +213,6 @@ function drawelements(radius) {
   }
 }
 
-
 // dalla guida: windowResized() --> A function that's called when the browser window is resized. Code placed in the body of windowResized() will run when the browser window's size changes. It's a good place to call resizeCanvas() or make other adjustments to accommodate the new window size.
 //dalla guida: resizeCanvas() --> Resizes the canvas to a given width and height.
 // resizeCanvas() immediately clears the canvas and calls redraw(). It's common to call resizeCanvas() within the body of windowResized() like so:
