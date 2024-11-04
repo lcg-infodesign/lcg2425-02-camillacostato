@@ -133,8 +133,8 @@ function drawelements(radius) {
 
       //ora mi occupo dei colori degli elementi
       //prima ho fatto in modo che gli elementi dello stesso modulo abbiano lo stesso colore (a parte le linee)
-      //ora però vorrei fare in modo che il cerchio centrale, quando presente, fosse del colore del modulo ma in una tonalità molto scura
-      //le fomre geometriche sulle linee invece devono assumere una tonalità (sempre del colore del modulo in questione) man mano più chiara all'aumentare della x // più si allontanano dal centro più saranno di una tonalità più chiara
+      //ora però vorrei fare in modo che il cerchio centrale, quando presente, fosse del colore del modulo ma più scuro
+      //le fomre geometriche sulle linee invece devono assumere una luminosità (sempre del colore del modulo in questione) man mano maggiore all'aumentare della x // più si allontanano dal centro più saranno chiare
 
       //ora mi occupo delle figure sulle linee 
       //creo la shade media e quella più chiara che servono per colorare questi elementi
@@ -152,9 +152,9 @@ function drawelements(radius) {
       //lo stesso discorso vale per il verde e per il blu, impostati seguendo lo stesso procedimento del rosso
       let midshade = color(red(chosencolor) * 0.7, green(chosencolor) * 0.7, blue(chosencolor) * 0.7);
       //nella variabile lightshade salvo un nuovo color che vado a creare
-      //seguo la stessa logica usata per midshade ma qui porto l'intensità delle componenti R G B originali al n2*100% del colore colore originale chosencolor (per andare a tonalità + chiara)
+      //seguo la stessa logica usata per midshade ma qui porto l'intensità delle componenti R G B originali al n2*100% del colore colore originale chosencolor (per andare sul chiaro)
       let lightshade = color(red(chosencolor) * 1.7, green(chosencolor) * 1.7, blue(chosencolor) * 1.7);
-      //per far sì che gli elementi assumano una intensità di colore via via maggiore all'aumentare della loro posizione x sfrutto due funzioni di p5.js
+      //per far sì che gli elementi assumano una luminosità via via maggiore all'aumentare della loro posizione x sfrutto due funzioni di p5.js
 
       //1) dalla guida p5: lerpColor() blends two colors to find a third color between them.
       // Parameters
